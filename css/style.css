@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Lato';
+   color: #1E212C;
+}
+
+.wrapper>main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1275px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.drop-block__container {
+   padding-top: 180px;
+   padding-bottom: 180px;
+
+}
+
+.drop-block__content {
+   display: flex;
+   margin: 0 -52.5px;
+}
+
+.drop-block__image {
+   align-self: center;
+   flex: 0 1 43.4%;
+   padding: 0 52.5px;
+}
+
+.drop-block__image img {
+   max-width: 100%;
+}
+
+.text-drop {
+   flex: 0 1 56.6%;
+   padding: 0 52.5px;
+}
+
+.text-drop__heading:not(:last-child) {
+   margin-bottom: 40px;
+}
+
+.heading-drop {
+   color: #1E212C;
+}
+
+.heading-drop__subtitle {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+
+.heading-drop__subtitle:not(:last-child) {
+   margin-bottom: 8px;
+}
+
+.heading-drop__title {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 1.3;
+}
+
+.drop-block__form {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -12.5px;
+   row-gap: 24px;
+}
+
+.drop-block__form:not(:last-child) {
+   margin-bottom: 48px;
+}
+
+.form__item {
+   display: flex;
+   flex-direction: column;
+   flex: 0 1 50%;
+   padding: 0 12.5px;
+}
+
+.form__item-textarea {
+   flex: 0 1 100%;
+}
+
+.form__label {
+   font-size: 16px;
+   line-height: 1.6;
+   color: #424551;
+}
+
+.form__label:not(:last-child) {
+   margin-bottom: 8px;
+}
+
+.form__input {
+   height: 52px;
+   border: 1px solid #D7DADD;
+   border-radius: 4px;
+   padding: 13px 16px;
+   font-size: 16px;
+   line-height: 1.6;
+}
+
+.form__area {
+   height: 128px;
+   font-size: 16px;
+   line-height: 1.6;
+   border: 1px solid #D7DADD;
+   padding: 13px 16px;
+}
+
+
+.form__checkbox {
+   margin: 0 -25px;
+}
+
+.checkbox-form__content {
+   padding: 0 25px;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.checkbox {
+   flex: 0 1 44.6%;
+   position: relative;
+}
+
+.checkbox__input {
+   position: absolute;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+
+.checkbox__input:checked+.checkbox__label::before {
+   background: #FF3F3A url('../img/check.svg') center / 70% no-repeat;
+}
+
+.checkbox__label {
+   font-size: 16px;
+   line-height: 1.6;
+   cursor: pointer;
+   display: inline-flex;
+   gap: 10px;
+}
+
+.checkbox__label::before {
+   content: "";
+   flex: 0 0 16px;
+   position: relative;
+   top: 3px;
+   width: 16px;
+   height: 16px;
+   border-radius: 4px;
+   background-color: #ffffff;
+   border: 1px solid #FF3F3A;
+}
+
+.checkbox__text {
+   align-self: center;
+}
+
+.drop-block__button {
+   flex: 0 0 48.2%;
+   align-self: flex-start;
+}
+
+.button {
+   border-radius: 4px;
+   letter-spacing: 0.5px;
+   font-weight: 700;
+   line-height: 1.25;
+   color: #fff;
+   display: inline-block;
+   padding: 16px 40px;
+   position: relative;
+   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
+
+.button span {
+   position: relative;
+   z-index: 2;
+}
+
+.button::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   transition: opacity 0.3s ease 0s;
+   opacity: 0;
+   border-radius: 4px;
+   background: linear-gradient(55.95deg, #ca3530 0%, #c94d05 100%);
+}
+
+.button:hover::before {
+   opacity: 1;
+}
+
+footer {
+   margin: 0 auto;
+   padding: 0 15px 50px 15px;
+}
+
+.how-radio h2 {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 1px;
+}
+
+.how-radio h2:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+.radio__input {
+   position: absolute;
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+
+.radio__label {
+   font-weight: 700;
+   line-height: 1.6;
+   cursor: pointer;
+   display: inline-flex;
+   align-items: center;
+   gap: 12px;
+   position: relative;
+}
+
+.radio__label::before {
+   content: '';
+   align-self: flex-start;
+   transform: translate(0, 35%);
+   flex: 0 0 16px;
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 1px solid #FF3F3A;
+}
+
+.radio__label::after {
+   content: '';
+   position: absolute;
+   top: 5px;
+   left: 0px;
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   background-color: #FF3F3A;
+   opacity: 0;
+   transition: opacity 0.5s ease;
+}
+
+.radio__input:checked+.radio__label::after {
+   opacity: 1;
+}
